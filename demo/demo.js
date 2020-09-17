@@ -84,10 +84,8 @@ filterIntensity.addEventListener("change", function (e) {
     document.getElementById("filter-intensity-value").innerText = filterIntensity.value;
 });
 
-
 init();
-
 filterShader.innerHTML = filters[shaderSelector.value];
-resetFilter();
 
-ctx.drawImage(reference, 0, 0);
+resetFilter();
+reference.onload = resetFilter;
