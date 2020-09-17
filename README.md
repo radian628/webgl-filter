@@ -41,9 +41,9 @@ let brightnessFilter = new GLFilter(`
 ```
 
 # GLFilter.filter(image, amount, callback, [uniforms])
- image: The image to be filtered.
- amount: Corresponds to the uAmount uniform.
- callback: Once the filtered image has loaded, it is passed as the first argument to this callback.
+ image: The image to be filtered.  
+ amount: Corresponds to the uAmount uniform.  
+ callback: Once the filtered image has loaded, it is passed as the first argument to this callback.  
  uniforms: An optional parameter that allows for the addition of extra uniforms. This parameter should be an array of objects, which have the following structure:
  ```js
  {
