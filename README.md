@@ -47,7 +47,7 @@ let brightnessFilter = new GLFilter(`
  uniforms: An optional parameter that allows for the addition of extra uniforms. This parameter should be an array of objects, which have the following structure:
  ```js
  {
-     uniformType: "f2", //Can be any uniform type (this one is a float vec2).
+     uniformType: "2f", //Can be any uniform type (this one is a float vec2).
      uniformName: "uSampleUniformName", //The name of the uniform.
      uniformValue: [2.0, 3.0] //The value(s) to set the uniform to.
  }
