@@ -36,8 +36,13 @@ class GLFilter {
 
     filter (image, amount, callback, uniforms) {
 
-        this.canvas.width = image.width;
-        this.canvas.height = image.height;
+        if (image.naturalWidth) {
+            this.canvas.width = image.naturalWidth;
+            this.canvas.height = image.naturalHeight;
+        } else {
+            this.canvas.width = image.width;
+            this.canvas.height = image.height;
+        }
 
         let gl = this.gl;
 

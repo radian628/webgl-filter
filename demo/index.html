@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="demo.css">
+    </head>
+    <body>
+        <h1>Webgl-filter Demo:</h1>
+        <div id="flex-container">
+            <div class="h-section">
+                <p>Regular:</p>
+                <img id="reference" src="image.jpg">
+                <p>Filtered</p>
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="h-section">
+                <p>Select Shader:</p>
+                <select id="shader-selector"></select>
+                <p>Filter Intensity: <span id="filter-intensity-value">1.5</span></p>
+                <input type="range" min="0" max="3" value="1.5" step="0.001" id="filter-intensity">
+                <p>Filter Shader:</p>
+                <textarea id="filter-shader"></textarea>
+            </div>
+        </div>
+        <script src="../src/glfilter.js"></script>
+        <script src="demo.js"></script>
+    </body>
+</html>

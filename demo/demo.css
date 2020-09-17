@@ -1,0 +1,24 @@
+#reference {
+    height: 30vh;
+}
+
+#canvas {
+    height: 30vh;
+}
+
+#flex-container {
+    display: flex;
+}
+
+#filter-intensity {
+    width: 50%;
+}
+
+#filter-shader {
+    width: 80%;
+    height: 500px;
+}
+
+.h-section {
+    width: 45%;
+}

@@ -1,12 +1,12 @@
 # webgl-filter
- Filter images, canvases, etc. using WebGL fragment shaders.
+ Filter images, canvases, etc. using WebGL fragment shaders. [Try the demo here.](https://radian628.github.io/webgl-filter/demo/index.html)
 
-# GLFilter(shader)
+## GLFilter(shader)
  Create a new filter by calling the GLFilter constructor. It accepts a string as an argument, representing a fragment shader that performs the filter operation.
 
  All fragment shaders created with GLFilter require a vec2 varying named "vTexCoords" (representing the texture coordinates) and a float uniform named "uAmount" (a single dummy parameter for the filter). 
 
-# Example Shaders
+### Example Shaders
 Contrast filter:
 ```js
 let contrastFilter = new GLFilter(`
@@ -40,7 +40,7 @@ let brightnessFilter = new GLFilter(`
 `);
 ```
 
-# GLFilter.filter(image, amount, callback, [uniforms])
+## GLFilter.filter(image, amount, callback, [uniforms])
  image: The image to be filtered.  
  amount: Corresponds to the uAmount uniform.  
  callback: Once the filtered image has loaded, it is passed as the first argument to this callback.  
